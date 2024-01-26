@@ -1,0 +1,108 @@
+.process {
+    position: relative;
+    background-color: var(--bg-color);
+
+    .title {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .shape {
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        height: 300px;
+        bottom: 100%;
+
+        svg {
+            position: absolute;
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    .process-item {
+        padding: 0 40px;
+        text-align: center;
+        z-index: 100;
+
+        .step {
+            position: relative;
+            width: 125px;
+            height: 125px;
+            line-height: 120px;
+            background-color: var(--white);
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            color: var(--primary-second-color);
+            text-align: center;
+            font-size: 30px;
+
+            &::after {
+                position: absolute;
+                content: '01';
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                border-radius: 50%;
+                background: var(--primary-second-color);
+                color: var(--white);
+                font-size: 16px;
+                top: -5px;
+                left: -25px;
+                border: solid 5px #b8b3d1;
+            }
+        }
+
+        h6 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 2;
+            color: var(--text-color);
+        }
+    }
+
+    .row {
+        &::before {
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 1px;
+            left: 25%;
+            top: 52%;
+            background-color: var(--bg-color-300);
+        }
+    }
+
+    .container {
+        .row {
+            .w-4:nth-child(2) {
+                .process-item {
+                    .step {
+                        &::after {
+                            position: absolute;
+                            content: '02';
+                        }
+                    }
+                }
+            }
+
+            .w-4:nth-child(3) {
+                .process-item {
+                    .step {
+                        &::after {
+                            position: absolute;
+                            content: '03';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

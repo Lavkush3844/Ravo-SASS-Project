@@ -1,0 +1,88 @@
+header{
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    .logo{
+        width: 70px;
+    }
+    nav{
+        margin-left: auto;
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                a{
+                    display: block;
+                    font-size:14px;
+                    font-weight: 500;
+                    padding: 15px 17px;
+                    margin: 8px;
+                    color: var(--white);
+                    transition: all ease 0.4s;
+                }
+            }
+            .dropdown{
+                position: relative;
+                .dropdown-menu{
+                    position: absolute;
+                    flex-direction: column;
+                    min-width: 200px;
+                    padding: 20px 0px;
+                    border-radius: 5px;
+                    background-color: var(--white);
+                    box-shadow: var(--shadow);
+                    opacity: 0;
+                    visibility: hidden;
+                    li{
+                        a{
+                            color: #51535f;
+                            font-weight: 400;
+                            font-size: 13px;
+                            padding: 10px 25px;
+                            margin: 0px;
+                            &:hover{
+                                background:#f5f5f5;
+                            }
+                        }    
+                    }
+                }
+                &:hover .dropdown-menu{
+                    visibility:visible;
+                    opacity: 1;
+                    transition: all ease 0.4s;
+                }
+                .dropdown-menu li a i{
+                    float: right;
+                }
+            }       
+        }
+    }
+    .social-icon{
+        position: relative;
+        padding-left: 20px;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 20px;
+            background-color: #ffffff33;
+            top: 50%;
+            left: 0;
+            transform:translateY(-50%);
+        }
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                a{
+                    display: block;
+                    font-size: 13px;
+                    margin: 10px;
+                    color: var(--white);
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,146 @@
+.about {
+    padding-bottom: 120px;
+
+    .about-img {
+        position: relative;
+        width: 100%;
+
+        .img-1,
+        .img-2 {
+            border-radius: 15px;
+            width: 70%;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .img-2 {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+
+            .play-button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                .circle {
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.2);
+                    line-height: 70px;
+                    height: 70px;
+                    width: 70px;
+                    color: var(--white);
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
+        }
+
+        .award-icon {
+            text-align: center;
+            padding: 15px 30px;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            border-radius: 10px;
+            display: inline-block;
+            position: absolute;
+            bottom: -30%;
+            left: 8%;
+
+            .star {
+                margin-bottom: 20px;
+
+                .img {
+                    width: 60px;
+                    position: relative;
+
+                    .icon {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: var(--white);
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            h6 {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.5;
+                margin: 0;
+                color: var(--primary-color);
+            }
+
+            p {
+                font-size: 15px;
+                color: var(--text-color);
+                font-weight: 400;
+                line-height: 2;
+                margin: 0;
+            }
+        }
+    }
+
+    .about-contant {
+        padding-left: 50px;
+
+        h6 {
+            display: inline-block;
+            background-color: var(--bg-color-300);
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-size: 12px;
+            color: var(--primary-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.6;
+            font-size: 40px;
+            color: var(--primary-color);
+
+            span {
+                background-image: var(--gradiant-color);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                display: inline-block;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: var(--fw);
+            line-height: 2;
+            color: var(--text-color);
+        }
+
+        ul {
+            margin-top: 20px;
+
+            li {
+                list-style: none;
+
+                .icon{
+
+                    border-radius: 50%;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    margin-right: 15px;
+                    background-color: #faf7fa;
+                    display: inline-block;
+                    padding: 5px 7px;
+                    color: var(--primary-color);
+                }
+
+            }
+        }
+    }
+}
