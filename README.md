@@ -1,5 +1,5 @@
 <h1>Ravo Website</h1>
-<h2>This Project is made using SASS</h2>
+<h2>This project is created using SCSS</h2>
 <h3>Screenshots :</h3>
 <br/>
 <br/>
